@@ -11,6 +11,10 @@ jobs:
     env:
       GOOGLE_CREDENTIALS: ${{ secrets.GCP_SA_KEY }}
 
+    defaults:
+      run:
+        working-directory: ./BuildingGcpResources/src/main/java/com/example/BuildingGcpResources/deployments/
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
