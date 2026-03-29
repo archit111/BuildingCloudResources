@@ -3,6 +3,7 @@ name : "Terraform CD"
 on:
   push:
     branches: -master
+  workflow_dispatch: "Run Workflow"
 
 jobs:
   terraform:
